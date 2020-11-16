@@ -1,13 +1,10 @@
 import React,{ Fragment,useEffect } from 'react';
-import {Link} from 'react-router-dom'
 import {getAllWeathers} from '../../actions/weather'
 import { connect } from 'react-redux'
 import Spinner from '../layout/Spinner' 
 
 
 const Weathers = ( {getAllWeathers ,weather:{weather,loading} } ) => {
-
-    const employeeData = []
 
 
     useEffect(()=>{

@@ -9,7 +9,6 @@ import { Fragment } from 'react';
 import  React ,{ useEffect } from 'react';
 import {loadUser} from './actions/auth'
 import Weathers from './components/weathers/Weathers'
-import Weather from './components/weather/Weather'
 
 const App= ()=> {
  
@@ -26,7 +25,6 @@ const App= ()=> {
         <Route exact path='/' component = {Login} />
         <Switch>
         <Route exact path='/weathers'component={Weathers} />
-      {/*   <Route exact path='/weather/:id' component = {Weather} /> */}
         </Switch>
         </Fragment>
       </Router>
